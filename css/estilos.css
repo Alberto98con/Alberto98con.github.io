@@ -653,7 +653,7 @@ header {
 }
 
 .card.expanded .card-description {
-    max-height: 200px;
+    max-height: 20000px;
     /* Cambia este valor según la cantidad de texto */
     padding-top: 15px;
     /* Añadir espacio superior al expandirse */
