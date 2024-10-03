@@ -449,7 +449,7 @@ header {
 }
 
 .footer__title,
-.footer__email{
+.footer__email {
     color: #fff;
 }
 
@@ -547,6 +547,77 @@ header {
 .footer__img {
     width: 30px;
 }
+
+
+
+/*COOKIES*/
+.aviso-cookies {
+    display: none;
+    background: white;
+    padding: 20px;
+    width: calc(100% - 40px);
+    max-width: 300px;
+    line-height: 200%;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 100;
+    padding-top: 60px;
+    box-shadow: 0px 2px 20px 10px rgba(222, 222, 222, .25);
+    text-align: center;
+}
+
+.aviso-cookies.activo{
+    display: block;
+}
+
+.aviso-cookies .galleta {
+    max-width: 100px;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+.aviso-cookies .titulo,
+.parrafo {
+    margin-bottom: 15px;
+}
+
+.aviso-cookies .boton{
+    width: 100%;
+    background: #595959;
+    border: none;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding: 15px 20px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .3s ease all;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.aviso-cookies .boton:hover{
+    background: #000;
+}
+
+.aviso-cookies .enlace{
+    color: #4DBFFF;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.aviso-cookies .enlace:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
 
 /*Equipo*/
 
@@ -686,11 +757,13 @@ header {
 }
 
 .card.expanded .expand-btn {
-    display: none; /* Oculta el botón de expansión cuando la tarjeta está expandida */
+    display: none;
+    /* Oculta el botón de expansión cuando la tarjeta está expandida */
 }
 
 .close-btn {
-    display: none; /* Inicialmente oculto */
+    display: none;
+    /* Inicialmente oculto */
     margin-top: 10px;
     padding: 8px 16px;
     background-color: #007bff31;
@@ -705,7 +778,8 @@ header {
 }
 
 .card.expanded .close-btn {
-    display: inline-block; /* Muestra el botón de cerrar cuando la tarjeta está expandida */
+    display: inline-block;
+    /* Muestra el botón de cerrar cuando la tarjeta está expandida */
 }
 
 
@@ -725,6 +799,8 @@ header {
     transition: margin 0.6s ease;
     /* Suaviza los márgenes durante la expansión */
 }
+
+
 
 
 /*Calendario*/
@@ -764,6 +840,9 @@ header {
     height: 100%;
     border: 0;
 }
+
+
+
 
 /*Media*/
 

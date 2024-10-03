@@ -5,6 +5,24 @@
     <script src="https://kit.fontawesome.com/bde293b814.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-56KZNXGG');
+    </script>
+    <!-- End Google Tag Manager -->
     <title>Seliana Psicología - Psicoterapia Online en España</title>
     <link rel="shortcut icon" href="./images/logotipoP.jpg" type="image/x-icon">
     <link rel="stylesheet" href="./css/normalize.css">
@@ -69,6 +87,11 @@
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-56KZNXGG" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <header class="header__calendar">
         <nav class="nav">
             <div class="logo">SELIANA PSICOLOGÍA</div>
@@ -94,8 +117,7 @@
     <main>
         <section class="calendar">
             <div class="calendar__container container">
-                <iframe
-                    src="https://citas.selianapsicologia.com/index.php/?provider=any-provider&service=3"
+                <iframe src="https://citas.selianapsicologia.com/index.php/?provider=any-provider&service=3"
                     style="border: 0" width="100%" height="100%" frameborder="0"></iframe>
             </div>
         </section>
@@ -143,7 +165,18 @@
         </section>
     </footer>
 
+    <!--Cookies-->
+    <div class="aviso-cookies" id="aviso-cookies">
+        <img src="./images/cookie.svg" alt="galleta" class="galleta">
+        <h3 class="titulo">Cookies</h3>
+        <p class="parrafo">Utilizamos cookies propias y de terceros para mejorar nuestros servicios.</p>
+        <button class="boton" id="btn-aceptar-cookies">De acuerdo</button>
+        <a class="enlace" href="./aviso-cookies.html">Aviso de cookies</a>
+    </div>
+
     <!--Scripts-->
     <script src="./js/menu.js"></script>
+    <script src="./js/aviso-cookies.js"></script>
 </body>
+
 </html>
