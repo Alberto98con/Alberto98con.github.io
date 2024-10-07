@@ -5,6 +5,7 @@ Disallow: /wp-admin/
 Disallow: /wp-login.php
 Disallow: /cgi-bin/
 Disallow: /private/
+Disallow: /*.html$
 Disallow: /Backups/
 Disallow: /css/
 Disallow: /js/
