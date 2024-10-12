@@ -1,27 +1,8 @@
 
 User-agent: *
-Disallow: /admin/
-Disallow: /wp-admin/
-Disallow: /wp-login.php
-Disallow: /cgi-bin/
-Disallow: /private/
-Disallow: /*.html$
 Disallow: /Backups/
 Disallow: /css/
 Disallow: /js/
-
-
-User-agent: *
-Allow: /
-
-
-User-agent: *
-Allow: /faq/
-Allow: /terapia-online/
-Allow: /psicologos-online/
-Allow: /psicologo-gratis/
-Allow: /contacto/
-Allow: /primera-consulta-gratis/
 
 
 Sitemap: https://selianapsicologia.com/sitemap.xml
