@@ -1,9 +1,11 @@
+# Activa el motor de reescritura de URLs
 RewriteEngine On
+
+# Fuerza el uso de HTTPS y redirige "www" a "no-www"
+RewriteCond %{HTTPS} !=on [OR]
 RewriteCond %{HTTP_HOST} ^www\.selianapsicologia\.com [NC]
 RewriteRule ^(.*)$ https://selianapsicologia.com/$1 [L,R=301]
 
-RewriteCond %{HTTPS} !=on
-RewriteRule ^(.*)$ https://selianapsicologia.com/$1 [L,R=301]
 
 <IfModule mod_headers.c>
     Header set Link "<https://selianapsicologia.com/>; rel=\"canonical\""
