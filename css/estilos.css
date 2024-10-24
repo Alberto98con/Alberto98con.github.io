@@ -870,6 +870,144 @@ header {
 
 /*Blog*/
 
+.blog-body{
+    background: #f6f6f6;
+}
+
+/*Portada*/
+
+.blog-container-cover {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    background-image: url(../images/naturaleza.jpg);
+    /* Imagen de fondo */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.blog-container-cover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 47, 228, 0.315);
+    /* Color con canal alpha */
+    z-index: 1;
+}
+
+.container-info-cover {
+    max-width: 800px;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    /* Solo se usa z-index si realmente necesitas capas */
+}
+
+.container-info-cover h1 {
+    font-size: 60px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.container-info-cover p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/*Post- Publicaciones*/
+
+.container-post{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.posts{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.posts .post{
+    background: white;
+    box-shadow: 0 0 20px -20px black;
+    border-radius: 6px;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.post .ctn-img{
+    width: 100%;
+}
+
+.post .ctn-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.post h2{
+    font-size: 18px;
+    margin-top: 20px;
+    padding: 0px 20px;
+}
+
+.post span{
+    display: block;
+    margin-top: 10px;
+    padding: 0px 20px;
+}
+
+.ctn-tag{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 16px;
+    margin-top: 10px;
+}
+
+.ctn-tag li{
+    list-style: none;
+    font-size: 14px;
+    margin: 4px;
+    padding: 6px 10px;
+    background: #e8e8e8;
+    cursor: default;
+}
+
+.post button{
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 10px 50px;
+    font-size: 16px;
+    background: #46a2fd;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.post button:hover{
+    opacity: 0.9;
+}
+
+/*Articulos*/
+
 /*Encabezado*/
 .header__blog {
     position: relative;
@@ -885,7 +1023,7 @@ header {
 
 /*Portada*/
 
-.container-cover {
+.article-container-cover {
     width: 100%;
     height: 500px;
     position: relative;
@@ -896,7 +1034,7 @@ header {
     background-repeat: no-repeat;
 }
 
-.container-cover::before {
+.article-container-cover::before {
     content: '';
     position: absolute;
     top: 0;
@@ -1258,10 +1396,71 @@ header {
     }
 }
 
-/*Media del apartado Blog*/
+
+
+
+
+/*Media de Articulos*/
+
+/* Para pantallas pequeñas como móviles (max-width: 768px) */
 @media (max-width: 768px) {
+    /* Ajuste del contenedor de portada */
     .container-info-cover {
         max-width: 90%;
-        /* Reduce el ancho máximo en pantallas pequeñas */
+        padding: 20px;
+    }
+
+    /* Ajuste del artículo */
+    .container-content {
+        width: 100%;
+        flex-direction: column;
+        padding: 0 15px;
+        padding-bottom: 30px; /* Añade un padding adicional en la parte inferior */
+
+    }
+
+    .article-blog {
+        padding: 15px;
+        font-size: 16px; /* Tamaño más pequeño de fuente */
+        margin-bottom: 40px; /* Añade un margen inferior al artículo */
+
+    }
+
+    /* Imágenes en el artículo */
+    .article-blog img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Aside de artículos relacionados */
+    .container-aside {
+        margin-top: 20px; /* Se asegura de que el aside tenga un margen superior para separar ambos elementos */
+    }
+
+    .container-aside aside {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .container-aside aside img {
+        width: 100%;
+    }
+}
+
+
+/* Para pantallas medianas (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .container-content {
+        width: 90%;
+    }
+
+    .article-blog {
+        font-size: 18px;
+    }
+    
+    /* Asegura que los botones y enlaces estén bien espaciados */
+    .container-aside aside button {
+        padding: 10px 30px;
     }
 }
