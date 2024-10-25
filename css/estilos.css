@@ -870,7 +870,7 @@ header {
 
 /*Blog*/
 
-.blog-body{
+.blog-body {
     background: #f6f6f6;
 }
 
@@ -926,14 +926,40 @@ header {
     font-weight: 300;
 }
 
-/*Post- Publicaciones*/
-
-.container-post{
+/*Contenedor de categorias*/
+.container-post {
     max-width: 1200px;
     margin: auto;
 }
 
-.posts{
+input[type="radio"] {
+    display: none;
+}
+
+.container-category {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.container-category label {
+    padding: 6px 40px;
+    margin: 10px;
+    font-size: 20px;
+    background: #e2e2e2;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container-category label:hover {
+    opacity: 0.7;
+}
+
+/*Post- Publicaciones*/
+
+.posts {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -943,7 +969,7 @@ header {
     padding: 20px;
 }
 
-.posts .post{
+.posts .post {
     background: white;
     box-shadow: 0 0 20px -20px black;
     border-radius: 6px;
@@ -951,29 +977,29 @@ header {
     padding-bottom: 20px;
 }
 
-.post .ctn-img{
+.post .ctn-img {
     width: 100%;
 }
 
-.post .ctn-img img{
+.post .ctn-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.post h2{
+.post h2 {
     font-size: 18px;
     margin-top: 20px;
     padding: 0px 20px;
 }
 
-.post span{
+.post span {
     display: block;
     margin-top: 10px;
     padding: 0px 20px;
 }
 
-.ctn-tag{
+.ctn-tag {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -981,7 +1007,7 @@ header {
     margin-top: 10px;
 }
 
-.ctn-tag li{
+.ctn-tag li {
     list-style: none;
     font-size: 14px;
     margin: 4px;
@@ -990,7 +1016,7 @@ header {
     cursor: default;
 }
 
-.post button{
+.post button {
     margin-top: 20px;
     margin-left: 20px;
     padding: 10px 50px;
@@ -1002,9 +1028,35 @@ header {
     border-radius: 4px;
 }
 
-.post button:hover{
+.post button:hover {
     opacity: 0.9;
 }
+
+/*Sistema de filtrado*/
+
+[value="TODOS"]:checked~.posts .post[data-category] {
+    display: block;
+}
+
+[value="Alimentación"]:checked~.posts .post:not([data-category~="Alimentación"]),
+[value="Salud"]:checked~.posts .post:not([data-category~="Salud"]),
+[value="JS"]:checked~.posts .post:not([data-category~="JS"]),
+[value="PHP"]:checked~.posts .post:not([data-category~="PHP"]),
+[value="NODE JS"]:checked~.posts .post:not([data-category~="NODEJS"]) {
+    display: none;
+}
+
+/*Marcado*/
+[value="TODOS"]:checked~.container-category [for="TODOS"],
+[value="Salud"]:checked~.container-category [for="Salud"],
+[value="Alimentación"]:checked~.container-category [for="Alimentación"],
+[value="JS"]:checked~.container-category [for="JS"],
+[value="PHP"]:checked~.container-category [for="PHP"],
+[value="NODE JS"]:checked~.container-category [for="NODE JS"] {
+    background: #46a2fd;
+    color: #fff;
+}
+
 
 /*Articulos*/
 
@@ -1091,6 +1143,7 @@ header {
     border-radius: 6px;
     overflow: hidden;
     position: relative;
+    background: #fff;
 }
 
 .article-blog ::before {
@@ -1135,6 +1188,7 @@ header {
     margin-left: 40px;
     margin-bottom: 40px;
     padding-bottom: 20px;
+    background: #fff;
 }
 
 .container-aside aside img {
@@ -1147,7 +1201,7 @@ header {
     padding: 0px 20px;
 }
 
-.container-aside aside button{
+.container-aside aside button {
     margin-top: 20px;
     margin-left: 20px;
     padding: 10px 50px;
@@ -1159,7 +1213,7 @@ header {
     border-radius: 6px;
 }
 
-.container-aside aside button:hover{
+.container-aside aside button:hover {
     opacity: 0.9;
 }
 
@@ -1399,11 +1453,42 @@ header {
 
 
 
+/*Media de Blog*/
+
+
+/* Diseño para tabletas (medianas) */
+@media (min-width: 768px) and (max-width: 1200px) {
+
+
+    .posts {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+/* Diseño para móviles (pantallas pequeñas) */
+@media (max-width: 900px) {
+
+    .posts {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 580px) {
+
+    .posts {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+
 
 /*Media de Articulos*/
 
 /* Para pantallas pequeñas como móviles (max-width: 768px) */
 @media (max-width: 768px) {
+
     /* Ajuste del contenedor de portada */
     .container-info-cover {
         max-width: 90%;
@@ -1415,14 +1500,17 @@ header {
         width: 100%;
         flex-direction: column;
         padding: 0 15px;
-        padding-bottom: 30px; /* Añade un padding adicional en la parte inferior */
+        padding-bottom: 30px;
+        /* Añade un padding adicional en la parte inferior */
 
     }
 
     .article-blog {
         padding: 15px;
-        font-size: 16px; /* Tamaño más pequeño de fuente */
-        margin-bottom: 40px; /* Añade un margen inferior al artículo */
+        font-size: 16px;
+        /* Tamaño más pequeño de fuente */
+        margin-bottom: 40px;
+        /* Añade un margen inferior al artículo */
 
     }
 
@@ -1434,7 +1522,8 @@ header {
 
     /* Aside de artículos relacionados */
     .container-aside {
-        margin-top: 20px; /* Se asegura de que el aside tenga un margen superior para separar ambos elementos */
+        margin-top: 20px;
+        /* Se asegura de que el aside tenga un margen superior para separar ambos elementos */
     }
 
     .container-aside aside {
@@ -1449,18 +1538,39 @@ header {
 }
 
 
-/* Para pantallas medianas (max-width: 1024px) */
-@media (max-width: 1024px) {
+/* Para pantallas (max-width: 1220px) */
+@media (max-width: 1220px) {
     .container-content {
-        width: 90%;
+        max-width: 1000px;
+        padding: 0 20px;
+    }
+}
+
+/* Para pantallas medianas (max-width: 1020px) */
+@media (max-width: 1020px) {
+    .container-content {
+        width: 100%;
+        flex-direction: column;
     }
 
-    .article-blog {
-        font-size: 18px;
+    .article-blog{
+        box-shadow: 0 0 0 0;
     }
-    
-    /* Asegura que los botones y enlaces estén bien espaciados */
-    .container-aside aside button {
-        padding: 10px 30px;
+
+    .container-aside{
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-aside aside{
+        max-width: 300px;
+        margin: 10px;
+    }
+}
+
+/* Para pantallas pequeñas (max-width: 800px) */
+@media (max-width: 800px) {
+    .container-aside{
+        flex-wrap: wrap;
     }
 }

@@ -130,29 +130,45 @@
         </div>
 
             <div class="container-post">
+
+                <input type="radio" id="TODOS" name="categories" value="TODOS" checked>
+                <input type="radio" id="Salud" name="categories" value="Salud">
+                <input type="radio" id="Alimentación" name="categories" value="Alimentación">
+                <input type="radio" id="JS" name="categories" value="JS">
+                <input type="radio" id="PHP" name="categories" value="PHP">
+                <input type="radio" id="NODE JS" name="categories" value="NODE JS">
+
+                <div class="container-category">
+                    <label for="TODOS">TODOS</label>
+                    <label for="Salud">Salud y Bienestar</label>
+                    <label for="Alimentación">Alimentación</label>
+                    <label for="JS">JS</label>
+                    <label for="PHP">PHP</label>
+                    <label for="NODE JS">NODE JS</label>
+                </div>
+
                 <div class="posts">
-                    <div class="post">
+                    <div class="post" data-category="Salud">
                         <div class="ctn-img">
                             <img src="./images/terapiaGrupal.jpg" alt="">
                         </div>
                         <h2>Este es el primer articulo</h2>
                         <span>24 Octubre 2024 - 19:30</span>
                         <ul class="ctn-tag">
-                            <li>css</li>
-                            <li>HTML</li>
+                            <li>Salud</li>
                         </ul>
                         <a href=""><button>Leer Más</button></a>
                     </div>
     
-                    <div class="post">
+                    <div class="post" data-category="Alimentación Salud">
                         <div class="ctn-img">
                             <img src="./images/terapiaGrupal.jpg" alt="">
                         </div>
                         <h2>Este es el primer articulo</h2>
                         <span>24 Octubre 2024 - 19:30</span>
                         <ul class="ctn-tag">
-                            <li>css</li>
-                            <li>HTML</li>
+                            <li>Alimentación</li>
+                            <li>Salud</li>
                         </ul>
                         <a href=""><button>Leer Más</button></a>
                     </div>
