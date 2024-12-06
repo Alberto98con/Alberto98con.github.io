@@ -1107,6 +1107,14 @@ input[type="radio"] {
 
 /*Contenedor -- contenido del artículo*/
 
+.author-info {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+
 .container-content {
     width: 1200px;
     margin: auto;
@@ -1164,6 +1172,32 @@ input[type="radio"] {
     width: 100%;
     margin-top: 20px;
 }
+
+/* Estilo para las listas dentro de los artículos */
+.article-blog ul {
+    list-style-type: disc; /* Estilo de punto para la lista */
+    padding-left: 20px; /* Añade espacio a la izquierda para la lista */
+    margin-bottom: 20px; /* Añade espacio al final de la lista */
+    margin-top: 20px;
+    font-size: 18px; /* Tamaño de fuente para la lista, congruente con los párrafos */
+    color: #3c3c3c; /* Color del texto de la lista */
+}
+.article-blog ul li {
+    margin-bottom: 8px; /* Espacio entre los elementos de la lista */
+    line-height: 1.6; /* Espaciado entre las líneas para mejorar la legibilidad */
+}
+
+/* Estilo adicional para listas dentro de secciones específicas */
+.article-blog h3 + ul {
+    margin-top: 10px; /* Espacio superior entre los encabezados y las listas */
+}
+
+.article-blog ul li strong {
+    font-weight: bold; /* Resalta el texto dentro de la lista */
+    color: #3c3c3c; /* Color del texto destacado */
+}
+
+
 
 /*Aside de los artículos relacionados*/
 .container-aside aside {
