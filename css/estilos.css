@@ -880,7 +880,7 @@ header {
     width: 100%;
     height: 500px;
     position: relative;
-    background-image: url(../images/naturaleza.jpg);
+    background-image: url(../images/cafe.webp);
     /* Imagen de fondo */
     background-position: center;
     background-size: cover;
@@ -894,7 +894,7 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(15, 47, 228, 0.315);
+    background: rgba(0, 0, 0, 0.5);
     /* Color con canal alpha */
     z-index: 1;
 }
@@ -1055,7 +1055,7 @@ input[type="radio"] {
     width: 100%;
     height: 500px;
     position: relative;
-    background-image: url(../images/terapiaGrupal.jpg);
+    background-image: url(../images/libros2.webp);
     /* Imagen de fondo */
     background-position: center;
     background-size: cover;
@@ -1069,7 +1069,7 @@ input[type="radio"] {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(30, 120, 255, 0.5);
+    background: rgba(0, 0, 0, 0.4);
     /* Color con canal alpha */
     z-index: 1;
 }
