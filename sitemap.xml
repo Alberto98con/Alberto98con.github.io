@@ -4,24 +4,50 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
 <url>
-  <loc>https://www.selianapsicologia.com/</loc>
-  <lastmod>2024-09-03T17:01:05+00:00</lastmod>
+  <loc>https://selianapsicologia.com/</loc>
+  <lastmod>2024-12-10T09:42:32+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://www.selianapsicologia.com/equipo</loc>
-  <lastmod>2024-09-03T17:01:05+00:00</lastmod>
+  <loc>https://selianapsicologia.com/equipo</loc>
+  <lastmod>2024-12-10T09:42:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.selianapsicologia.com/calendar</loc>
-  <lastmod>2024-09-03T17:01:05+00:00</lastmod>
+  <loc>https://selianapsicologia.com/calendar</loc>
+  <lastmod>2024-12-10T09:42:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.selianapsicologia.com/blog</loc>
-  <lastmod>2024-09-03T17:01:05+00:00</lastmod>
-  <priority>0.90</priority>
+  <loc>https://selianapsicologia.com/blog</loc>
+  <lastmod>2024-12-10T09:42:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://selianapsicologia.com/aviso-cookies</loc>
+  <lastmod>2024-12-10T09:42:32+00:00</lastmod>
+  <priority>0.40</priority>
+</url>
+<url>
+  <loc>https://selianapsicologia.com/articulos/perinatal</loc>
+  <lastmod>2024-12-10T09:42:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://selianapsicologia.com/articulos/ejercicio_y_videojuegos</loc>
+  <lastmod>2024-12-10T09:42:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://selianapsicologia.com/articulos/redes_tca</loc>
+  <lastmod>2024-12-10T09:42:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://selianapsicologia.com/articulos/articulo</loc>
+  <lastmod>2024-12-10T09:42:32+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 </urlset>
