@@ -2,7 +2,6 @@
 <html lang="es">
 
 <head>
-    <script src="https://kit.fontawesome.com/bde293b814.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Google Tag Manager -->
@@ -169,7 +168,12 @@
             </ul>
 
             <div class="menu-btn">
-                <i class="fa-solid fa-bars"></i>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                    <path fill-rule="evenodd"
+                        d="M3 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 5.25Zm0 4.5A.75.75 0 0 1 3.75 9h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 9.75Zm0 4.5a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Zm0 4.5a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+                        clip-rule="evenodd" />
+                </svg>
+
             </div>
         </nav>
 
@@ -181,72 +185,138 @@
     </header>
 
     <main>
+        <section class="servicios">
+            <div class="servicios__container container">
+                <h2>Nuestros Servicios</h2>
 
-        <section class="testimony">
-            <div class="testimony__container container">
-                <img src="./images/leftArrow.svg" alt="Flecha izquierda" class="testimony__arrow" id="before">
-                <section class="testimony__body testimony__body--show" data-id="1">
-                    <div class="testimony__texts">
-                        <h2 class="subtitle">Psicología Sanitaria<span class="testimony__course">Cuidando tu salud
-                                mental y emocional en todas las etapas de la vida</span></h2>
-                        <p class="testimony__review">La psicología sanitaria abarca el bienestar emocional y mental de
-                            personas de todas las edades. A través de un enfoque integral, te ayudamos a enfrentar
-                            desafíos cotidianos como el estrés, la ansiedad, la depresión, y otros problemas que afectan
-                            tu calidad de vida. Ofrecemos un espacio seguro y confidencial donde podrás trabajar en tu
-                            crecimiento personal, mejorar tu salud mental y fortalecer tus recursos internos para llevar
-                            una vida más plena y equilibrada.</p>
+                <div class="giratoria"> <!--Individual -->
+                    <div class="face front">
+                        <img src="./images/giratorias/terapia indovidual.jpg" alt="Terapia Individual">
+                        <h3>Terapia Individual</h3>
                     </div>
-                    <figure class="testimony__picture">
-                        <img src="./images/mental-health-2019924_640.jpg" alt="Salud mental en inglés"
-                            class="testimony__img">
-                    </figure>
-                </section>
-                <section class="testimony__body" data-id="2">
-                    <div class="testimony__texts">
-                        <h2 class="subtitle">Psicología Infanto-Juvenil <span class="testimony__course">Cuidando el
-                                bienestar emocional de los más pequeños y jóvenes</span></h2>
-                        <p class="testimony__review">La infancia y la adolescencia son etapas clave en el desarrollo
-                            emocional y psicológico. A través de un enfoque especializado, ayudamos a los más pequeños y
-                            jóvenes a enfrentar desafíos como la ansiedad, el bajo rendimiento escolar, problemas de
-                            conducta o dificultades emocionales. Nuestro objetivo es brindarles herramientas para
-                            mejorar su bienestar, fortalecer su autoestima y promover un crecimiento saludable en un
-                            entorno seguro y comprensivo.</p>
+                    <div class="face back">
+                        <h3>Terapia Individual</h3>
+                        <p>Ofrecemos sesiones personalizadas para trabajar tus emociones, mejorar tu bienestar y alcanzar
+                            tus objetivos personales en un entorno seguro y confidencial.</p>
+                        <div class="link">
+                            <a href="./calendar.html">Pide tu cita ahora</a>
+                        </div>
                     </div>
-                    <figure class="testimony__picture">
-                        <img src="./images/niñoBurbujas.jpg" alt="Niña explotando burbujas" class="testimony__img">
-                    </figure>
-                </section>
-                <section class="testimony__body" data-id="3">
-                    <div class="testimony__texts">
-                        <h2 class="subtitle"> Tratamiento de Adicciones <span class="testimony__course">Supera los
-                                hábitos destructivos y recupera el control de tu vida </span></h2>
-                        <p class="testimony__review">Las adicciones, ya sea a sustancias o comportamientos, pueden
-                            afectar profundamente la vida personal, familiar y laboral. Nuestro enfoque terapéutico te
-                            acompaña en el proceso de reconocer y superar estas dependencias, brindando las herramientas
-                            necesarias para gestionar los impulsos y desarrollar hábitos saludables. Te ayudamos a
-                            recuperar tu bienestar y a restablecer el equilibrio en tu vida.</p>
+                </div>
+    
+                <div class="giratoria"> <!-- Pareja -->
+                    <div class="face front">
+                        <img src="./images/giratorias/pareja.jpg" alt="Terapia de Pareja">
+                        <h3>Terapia de Pareja</h3>
                     </div>
-                    <figure class="testimony__picture">
-                        <img src="./images/drogas.jpg" alt="Hombre desenredando una mente de hilo"
-                            class="testimony__img">
-                    </figure>
-                </section>
-                <section class="testimony__body" data-id="4">
-                    <div class="testimony__texts">
-                        <h2 class="subtitle">Terapia de Pareja<span class="testimony__course">Fortaleciendo la
-                                comunicación y el vínculo emocional</span></h2>
-                        <p class="testimony__review">Las relaciones de pareja pueden atravesar momentos difíciles, desde
-                            problemas de comunicación hasta conflictos no resueltos o crisis emocionales. La terapia de
-                            pareja ofrece un espacio para mejorar el entendimiento mutuo, abordar conflictos de manera
-                            constructiva y revitalizar la relación. Trabajamos juntos para construir una base sólida de
-                            confianza y respeto, ayudándote a reconectar con tu pareja de manera saludable.</p>
+                    <div class="face back">
+                        <h3>Terapia de Pareja</h3>
+                        <p>Ayudamos a las parejas a mejorar la comunicación, resolver conflictos y fortalecer su relación
+                            para superar juntos los desafíos emocionales.</p>
+                        <div class="link">
+                            <a href="./calendar.html">Pide tu cita ahora</a>
+                        </div>
                     </div>
-                    <figure class="testimony__picture">
-                        <img src="./images/terapiaGrupal.jpg" alt="Grupo de personas en terapia" class="testimony__img">
-                    </figure>
-                </section>
-                <img src="./images/rightArrow.svg" alt="Flecha derecha" class="testimony__arrow" id="next">
+                </div>
+    
+                <div class="giratoria"> <!--Familia-->
+                    <div class="face front">
+                        <img src="./images/giratorias/familia.jpg" alt="Terapia Familiar">
+                        <h3>Terapia Familiar</h3>
+                    </div>
+                    <div class="face back">
+                        <h3>Terapia Familiar</h3>
+                        <p>Trabajamos con familias para mejorar las relaciones, gestionar conflictos y promover un entorno
+                            saludable y armonioso para todos sus miembros.</p>
+                        <div class="link">
+                            <a href="./calendar.html">Pide tu cita ahora</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="giratoria"> <!-- Infantil -->
+                    <div class="face front">
+                        <img src="./images/giratorias/infantil.jpg" alt="Niños">
+                        <h3>Terapia Infanto-Juvenil</h3>
+                    </div>
+                    <div class="face back">
+                        <h3>Infanto/Juvenil</h3>
+                        <p>Abordamos dificultades como el TDAH, el autismo, los problemas de aprendizaje y las habilidades
+                            emocionales y sociales. Trabajamos junto a las familias para fomentar un entorno que les permita
+                            alcanzar su máximo potencial.</p>
+                        <div class="link">
+                            <a href="./calendar.html">Pide tu cita ahora</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="giratoria">  <!-- Ansiedad -->
+                    <div class="face front">
+                        <img src="./images/giratorias/Ansiedad.jpg" alt="Mujer estresada">
+                        <h3>Tratamiento Ansiedad</h3>
+                    </div>
+                    <div class="face back">
+                        <h3>Trastornos de ansiedad</h3>
+                        <p>Abordamos los trastornos de ansiedad con técnicas probadas, como la terapia cognitivo-conductual,
+                            ayudándote a gestionar pensamientos intrusivos, reducir síntomas físicos y recuperar el control
+                            de tu vida.</p>
+                        <div class="link">
+                            <a href="./calendar.html">Pide tu cita ahora</a>
+                        </div>
+                    </div>
+                </div>
+    
+    
+                <div class="giratoria"> <!-- Depresión -->
+                    <div class="face front">
+                        <img src="./images/giratorias/Depresión.jpg" alt="Chica triste">
+                        <h3>Tratamiento Depresión</h3>
+                    </div>
+                    <div class="face back">
+                        <h3>Trastornos depresivos</h3>
+                        <p>Ofrecemos un enfoque personalizado para el tratamiento de la depresión, trabajando en aspectos
+                            como la gestión de emociones, la mejora de la autoestima y la reconstrucción de vínculos
+                            sociales.</p>
+                        <div class="link">
+                            <a href="./calendar.html">Pide tu cita ahora</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="giratoria"> <!-- Adicciones -->
+                    <div class="face front">
+                        <img src="./images/giratorias/adicciones.jpg" alt="Persona fumando">
+                        <h3>Tratamiento Adiccones</h3>
+                    </div>
+                    <div class="face back">
+                        <h3>Adicciones</h3>
+                        <p>Abordamos la dependencia a sustancias y comportamientos adictivos mediante un enfoque integral.
+                            Trabajamos en la gestión emocional, el fortalecimiento de la autoestima y estrategias para
+                            prevenir recaídas, siempre adaptándonos a tus necesidades.</p>
+                        <div class="link">
+                            <a href="./calendar.html">Pide tu cita ahora</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="giratoria"> <!-- Insomnio -->
+                    <div class="face front">
+                        <img src="./images/giratorias/insmonio.jpg" alt="Chica intentando dormir">
+                        <h3>Tratamiento Insomnio</h3>
+                    </div>
+                    <div class="face back">
+                        <h3>Duerme mejor, vive mejor.
+                        </h3>
+                        <p>Tratamos el insomnio con técnicas basadas en la terapia cognitivo-conductual, ayudándote a
+                            mejorar tus hábitos de sueño, reducir la ansiedad nocturna y recuperar el descanso reparador.
+                        </p>
+                        <div class="link">
+                            <a href="./calendar.html">Pide tu cita ahora</a>
+                        </div>
+                    </div>
+                </div>
             </div>
+            
         </section>
 
         <section class="container about">
@@ -336,6 +406,62 @@
             </div>
         </section>
 
+        <section class="testimony">
+            <div class="testimony__container container">
+                <img src="./images/leftArrow.svg" alt="Flecha izquierda" class="testimony__arrow" id="before">
+                <section class="testimony__body testimony__body--show" data-id="1">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Reseña de Carlos P.<span class="testimony__course">"Una experiencia
+                                transformadora"</span></h2>
+                        <p class="testimony__review">“El equipo de Seliana me ayudó a superar una etapa difícil en mi
+                            vida. A través de su terapia, logré entender mis emociones y fortalecer mi autoestima.
+                            Recomiendo su atención profesional a cualquiera que busque apoyo psicológico.”</p>
+                    </div>
+                    <figure class="testimony__picture">
+                        <img src="./images/personas/1.webp" alt="Retrato de Carlos P." class="testimony__img">
+                    </figure>
+
+                </section>
+                <section class="testimony__body" data-id="2">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Reseña de María G.<span class="testimony__course">"Un cambio positivo en mi
+                                vida"</span></h2>
+                        <p class="testimony__review">“Recibir terapia en Seliana Psicología fue una de las mejores
+                            decisiones que he tomado. Desde la primera sesión, sentí que estaba en un espacio seguro y
+                            comprensivo. Gracias a su apoyo, he aprendido a manejar mi ansiedad y a disfrutar más de la
+                            vida.”</p>
+                    </div>
+                    <figure class="testimony__picture">
+                        <img src="./images/personas/4.webp" alt="Retrato de María G." class="testimony__img">
+                    </figure>
+                </section>
+                <section class="testimony__body" data-id="3">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Reseña de Sofía R.<span class="testimony__course">"Más allá de mis
+                                expectativas"</span></h2>
+                        <p class="testimony__review">“Nunca imaginé cuánto podría cambiar mi relación con mi familia
+                            hasta que comencé la terapia. Ahora, tenemos una mejor comunicación y siento que puedo
+                            afrontar cualquier desafío emocional. ¡Gracias Seliana Psicología!”</p>
+                    </div>
+                    <figure class="testimony__picture">
+                        <img src="./images/personas/2.webp" alt="Retrato de Sofía R." class="testimony__img">
+                    </figure>
+                </section>
+                <section class="testimony__body" data-id="4">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Reseña de Andrés L.<span class="testimony__course">"Recuperé el control de
+                                mi vida"</span></h2>
+                        <p class="testimony__review">“Llegué a Seliana Psicología buscando ayuda para gestionar el
+                            estrés en mi trabajo. No solo aprendí a manejarlo, sino que también descubrí herramientas
+                            para mantener un equilibrio emocional. Eternamente agradecido por su dedicación.”</p>
+                    </div>
+                    <figure class="testimony__picture">
+                        <img src="./images/personas/3.webp" alt="Retrato de Andrés L." class="testimony__img">
+                    </figure>
+                </section>
+                <img src="./images/rightArrow.svg" alt="Flecha derecha" class="testimony__arrow" id="next">
+            </div>
+        </section>
 
 
         <section class="questions">
@@ -458,7 +584,7 @@
                         <a href="./calendar.html" class="nav__links">Citas</a>
                     </li>
                     <li class="nav__items">
-                        <a href="#" class="nav__links">Blog</a>
+                        <a href="./blog.html" class="nav__links">Blog</a>
                     </li>
                 </ul>
             </nav>
@@ -480,7 +606,8 @@
                         src="./images/instagram.svg" alt="Instagram" class="footer__img"></a>
                 <a href="tel:+34681025888" class="footer__icons"><img src="./images/whatsapp.svg" alt="WhatsApp"
                         class="footer__img"></a>
-                <a href="https://x.com/SelianaPsico" class="footer__icons"><img src="./images/twitter.svg" alt="Twitter" class="footer__img"></a>
+                <a href="https://x.com/SelianaPsico" class="footer__icons"><img src="./images/twitter.svg" alt="Twitter"
+                        class="footer__img"></a>
             </div>
 
             <h3 class="footer__copyright">Todos los derechos reservados &copy; Seliana Psicología</h3>
