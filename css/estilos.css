@@ -182,7 +182,7 @@ header {
     overflow: hidden;
 }
 
-.servicios__container{
+.servicios__container {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -760,6 +760,9 @@ header {
 
 
 /*Equipo*/
+.team {
+    background: linear-gradient(135deg, #f3f9fb 0%, #e6f4f1 100%);
+}
 
 .header__team {
     position: relative;
@@ -774,6 +777,7 @@ header {
 }
 
 .team__title {
+    color: #2c3e50;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -781,6 +785,7 @@ header {
 }
 
 .team__text {
+    color: #34495e;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -944,6 +949,9 @@ header {
 
 
 /*Calendario*/
+.calendar{
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+}
 
 .header__calendar {
     position: relative;
