@@ -758,6 +758,11 @@ header {
 
 
 
+
+/* ======================================= */
+/* Estilos para la Sección Infanto-Juvenil */
+/* ======================================= */
+
 /*Infanto-Juvenil*/
 .header__kids {
     position: relative;
@@ -771,7 +776,7 @@ header {
     background-size: cover;
 }
 
-/* Estilos para la Nueva Sección: Infantil (ID: infantil) */
+
 #infantil {
     padding: 60px 20px; /* Espaciado interno superior/inferior y lateral */
     background-color: #f9f9f9; /* Un color de fondo suave para la sección */
@@ -781,8 +786,8 @@ header {
 
 #infantil .contenedor-principal {
     max-width: 1200px; /* Ancho máximo del contenido para centrarlo */
-    margin: 0 auto;   /* Centra el contenedor principal */
-    text-align: center; /* Centra el "TITULO" */
+    margin: 0 auto;    /* Centra el contenedor principal */
+    text-align: center; /* Centra el título h1 */
 }
 
 #infantil h1 {
@@ -793,7 +798,7 @@ header {
     padding-bottom: 10px;
 }
 
-/* Línea debajo del título (como en tu boceto) */
+/* Línea debajo del título h1 */
 #infantil h1::after {
     content: '';
     position: absolute;
@@ -806,29 +811,32 @@ header {
     border-radius: 2px;
 }
 
-/* Contenedores de fila (para las dos columnas) */
+/* Contenedor de las tarjetas (fila-contenido) */
 .fila-contenido {
-    display: flex; /* Habilita Flexbox */
-    flex-wrap: wrap; /* Permite que los elementos salten de línea en pantallas pequeñas */
-    gap: 30px; /* Espacio entre los bloques de tema */
-    margin-bottom: 40px; /* Espacio entre la fila superior y la inferior */
-    justify-content: center; /* Centra los bloques si no ocupan todo el ancho */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; /* Espacio entre las tarjetas */
+    max-width: 1200px;
+    margin: 0 auto;
+    /* margin-bottom: 40px;  Comentado, puedes añadirlo si necesitas más espacio debajo de la fila */
+    justify-content: center; /* Centra las tarjetas si hay una o un número impar */
 }
 
-/* Estilo para cada bloque de tema (Autismo, TDAH, Dislexia, Más Cosas) */
+/* Estilo general para cada tarjeta (bloque-tema) */
 .bloque-tema {
-    flex: 1; /* Permite que los bloques crezcan y ocupen el espacio disponible */
-    min-width: 300px; /* Ancho mínimo para cada bloque antes de saltar de línea */
-    max-width: 550px; /* Ancho máximo deseado para los bloques */
-    min-height: 450px; /* **NUEVO: Hacemos los contenedores más alargados** */
-    border: 1px solid #ddd; /* Borde sutil como en tu boceto */
-    border-radius: 8px; /* Bordes redondeados */
+    flex-basis: calc(50% - 15px); /* 2 tarjetas por fila (50% - la mitad del gap de cada lado) */
+    min-width: 300px; /* Ancho mínimo para que no se hagan demasiado pequeñas */
+    max-width: 550px; /* Ancho máximo para evitar que se estiren demasiado */
+    /* min-height: 450px;  Puedes ajustar o quitar si el contenido varía mucho y no quieres alturas fijas */
+    border: 1px solid #ddd;
+    border-radius: 8px;
     padding: 30px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave para un efecto de elevación */
-    text-align: left; /* Alinea el texto a la izquierda dentro del bloque */
-    display: flex; /* Para organizar el contenido interno (título, descripción, imagen) */
-    flex-direction: column; /* Apila los elementos verticalmente */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición para efectos hover */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: left;
+    display: flex;
+    flex-direction: column; /* Permite que el contenido se apile verticalmente */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para hover */
+    box-sizing: border-box; /* Incluye padding y border en el ancho/alto total */
 }
 
 .bloque-tema:hover {
@@ -836,49 +844,61 @@ header {
     box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Sombra más pronunciada al pasar el ratón */
 }
 
-/* **NUEVO: Colores pastel diferentes para cada bloque** */
-/* El primer bloque de tema (Autismo) */
+/* Colores pastel diferentes para cada bloque (tarjeta) */
 .fila-contenido .bloque-tema:nth-child(1) {
     background-color: #e0f7fa; /* Azul claro pastel */
 }
 
-/* El segundo bloque de tema (TDAH) */
 .fila-contenido .bloque-tema:nth-child(2) {
     background-color: #ffe0b2; /* Naranja claro pastel */
 }
 
-/* El tercer bloque de tema (Dislexia) */
 .fila-contenido .bloque-tema:nth-child(3) {
     background-color: #d1c4e9; /* Morado claro pastel */
 }
 
-/* El cuarto bloque de tema (Más Cosas) */
 .fila-contenido .bloque-tema:nth-child(4) {
     background-color: #c8e6c9; /* Verde claro pastel */
 }
 
-
+/* Estilos para los elementos de texto y multimedia dentro de las tarjetas */
 .bloque-tema h2 {
     font-size: 2em;
-    color: #007bff; /* Color de los subtítulos */
+    color: #398de7; /* Color de los subtítulos de las tarjetas */
     margin-bottom: 15px;
     padding-bottom: 5px;
-    border-bottom: 2px solid #e0e0e0; /* Línea debajo de los subtítulos */
+    border-bottom: 2px solid #e0e0e0; /* Línea debajo de los subtítulos de las tarjetas */
 }
 
-.bloque-tema .descripcion {
+.bloque-tema p.descripcion {
     font-size: 1.1em;
-    line-height: 1.6;
+    line-height: 1.6; /* Mejora la legibilidad del texto */
     margin-bottom: 20px; /* Espacio debajo de la descripción */
-    flex-grow: 1; /* Permite que la descripción ocupe el espacio disponible */
+    flex-grow: 1; /* Permite que la descripción ocupe el espacio disponible y empuje la imagen abajo */
+}
+
+.bloque-tema h3 {
+    margin-top: 10px; /* Margen superior para separar del contenido anterior */
+    margin-bottom: 15px; /* Margen inferior para separar del siguiente párrafo o lista */
+    color: var(--color-title); /* Usa la variable de color si está definida */
+}
+
+.bloque-tema ul {
+    margin-bottom: 20px; /* Margen inferior para las listas */
+    list-style-type: disc; /* Asegura que la lista tenga viñetas */
+    padding-left: 20px; /* Indenta la lista para que las viñetas sean visibles */
+}
+
+.bloque-tema ul li {
+    margin-bottom: 5px; /* Pequeño margen entre elementos de la lista */
 }
 
 .bloque-tema .contenedor-imagen {
-    margin-top: auto; /* Empuja la imagen al final del bloque */
+    margin-top: auto; /* Empuja la imagen al final del bloque, útil con flex-direction: column y flex-grow en .descripcion */
     text-align: center; /* Centra la imagen */
-    border: 1px dashed #ccc; /* Borde punteado como en tu boceto para el contenedor de imagen */
+    border: 1px dashed #ccc; /* Borde punteado */
     padding: 10px;
-    background-color: rgba(255, 255, 255, 0.7); /* Fondo semi-transparente para la imagen para que se vea el color pastel del bloque */
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo semi-transparente para que se vea el color pastel del bloque */
     border-radius: 5px;
 }
 
@@ -889,27 +909,22 @@ header {
     margin: 0 auto; /* Centra la imagen */
 }
 
-/* Media Queries para Responsive Design */
-@media (max-width: 768px) {
-    .fila-contenido {
-        flex-direction: column; /* Apila los bloques verticalmente en pantallas pequeñas */
-        align-items: center; /* Centra los bloques apilados */
-    }
-
+/* Media Query para pantallas más pequeñas (una tarjeta por fila) */
+@media (max-width: 950px) { /* Ajusta este valor al punto de quiebre que desees */
     .bloque-tema {
-        width: 90%; /* Ocupa casi todo el ancho disponible */
-        max-width: 450px; /* Limita el ancho en móviles si es demasiado grande */
-        min-height: auto; /* **NUEVO: Elimina la altura mínima fija en móviles para que se adapte al contenido** */
-    }
-
-    #infantil h1 {
-        font-size: 2.2em;
-    }
-
-    .bloque-tema h2 {
-        font-size: 1.8em;
+        flex-basis: 100%; /* Ocupa todo el ancho disponible */
+        max-width: none; /* Elimina la restricción de ancho máximo */
     }
 }
+
+/* Media Query para pantallas muy pequeñas (ajustes para la fuente del título principal) */
+@media (max-width: 480px) {
+    #infantil h1 {
+        font-size: 2.2em; /* Reduce el tamaño del título principal en móviles */
+    }
+}
+
+
 
 
 
