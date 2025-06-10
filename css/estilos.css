@@ -758,6 +758,163 @@ header {
 
 
 
+/*Infanto-Juvenil*/
+.header__kids {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 500px;
+    background-image: linear-gradient(180deg, #2b2b2b6d 0%, #b4a7a770 100%), url(../images/Infantil/niño-manos.webp);
+    background-size: cover;
+}
+
+/* Estilos para la Nueva Sección: Infantil (ID: infantil) */
+#infantil {
+    padding: 60px 20px; /* Espaciado interno superior/inferior y lateral */
+    background-color: #f9f9f9; /* Un color de fondo suave para la sección */
+    font-family: Arial, sans-serif; /* O la fuente que uses en tu web */
+    color: #333;
+}
+
+#infantil .contenedor-principal {
+    max-width: 1200px; /* Ancho máximo del contenido para centrarlo */
+    margin: 0 auto;   /* Centra el contenedor principal */
+    text-align: center; /* Centra el "TITULO" */
+}
+
+#infantil h1 {
+    font-size: 3em; /* Tamaño del título principal */
+    color: #0056b3; /* Color azul, puedes ajustarlo */
+    margin-bottom: 50px; /* Espacio debajo del título */
+    position: relative; /* Para la línea inferior del título */
+    padding-bottom: 10px;
+}
+
+/* Línea debajo del título (como en tu boceto) */
+#infantil h1::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 80px; /* Ancho de la línea */
+    height: 3px; /* Grosor de la línea */
+    background-color: #007bff; /* Color de la línea */
+    border-radius: 2px;
+}
+
+/* Contenedores de fila (para las dos columnas) */
+.fila-contenido {
+    display: flex; /* Habilita Flexbox */
+    flex-wrap: wrap; /* Permite que los elementos salten de línea en pantallas pequeñas */
+    gap: 30px; /* Espacio entre los bloques de tema */
+    margin-bottom: 40px; /* Espacio entre la fila superior y la inferior */
+    justify-content: center; /* Centra los bloques si no ocupan todo el ancho */
+}
+
+/* Estilo para cada bloque de tema (Autismo, TDAH, Dislexia, Más Cosas) */
+.bloque-tema {
+    flex: 1; /* Permite que los bloques crezcan y ocupen el espacio disponible */
+    min-width: 300px; /* Ancho mínimo para cada bloque antes de saltar de línea */
+    max-width: 550px; /* Ancho máximo deseado para los bloques */
+    min-height: 450px; /* **NUEVO: Hacemos los contenedores más alargados** */
+    border: 1px solid #ddd; /* Borde sutil como en tu boceto */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave para un efecto de elevación */
+    text-align: left; /* Alinea el texto a la izquierda dentro del bloque */
+    display: flex; /* Para organizar el contenido interno (título, descripción, imagen) */
+    flex-direction: column; /* Apila los elementos verticalmente */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición para efectos hover */
+}
+
+.bloque-tema:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Sombra más pronunciada al pasar el ratón */
+}
+
+/* **NUEVO: Colores pastel diferentes para cada bloque** */
+/* El primer bloque de tema (Autismo) */
+.fila-contenido .bloque-tema:nth-child(1) {
+    background-color: #e0f7fa; /* Azul claro pastel */
+}
+
+/* El segundo bloque de tema (TDAH) */
+.fila-contenido .bloque-tema:nth-child(2) {
+    background-color: #ffe0b2; /* Naranja claro pastel */
+}
+
+/* El tercer bloque de tema (Dislexia) */
+.fila-contenido .bloque-tema:nth-child(3) {
+    background-color: #d1c4e9; /* Morado claro pastel */
+}
+
+/* El cuarto bloque de tema (Más Cosas) */
+.fila-contenido .bloque-tema:nth-child(4) {
+    background-color: #c8e6c9; /* Verde claro pastel */
+}
+
+
+.bloque-tema h2 {
+    font-size: 2em;
+    color: #007bff; /* Color de los subtítulos */
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #e0e0e0; /* Línea debajo de los subtítulos */
+}
+
+.bloque-tema .descripcion {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px; /* Espacio debajo de la descripción */
+    flex-grow: 1; /* Permite que la descripción ocupe el espacio disponible */
+}
+
+.bloque-tema .contenedor-imagen {
+    margin-top: auto; /* Empuja la imagen al final del bloque */
+    text-align: center; /* Centra la imagen */
+    border: 1px dashed #ccc; /* Borde punteado como en tu boceto para el contenedor de imagen */
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo semi-transparente para la imagen para que se vea el color pastel del bloque */
+    border-radius: 5px;
+}
+
+.bloque-tema .contenedor-imagen img {
+    max-width: 100%; /* Asegura que la imagen no se desborde del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina espacio extra debajo de la imagen */
+    margin: 0 auto; /* Centra la imagen */
+}
+
+/* Media Queries para Responsive Design */
+@media (max-width: 768px) {
+    .fila-contenido {
+        flex-direction: column; /* Apila los bloques verticalmente en pantallas pequeñas */
+        align-items: center; /* Centra los bloques apilados */
+    }
+
+    .bloque-tema {
+        width: 90%; /* Ocupa casi todo el ancho disponible */
+        max-width: 450px; /* Limita el ancho en móviles si es demasiado grande */
+        min-height: auto; /* **NUEVO: Elimina la altura mínima fija en móviles para que se adapte al contenido** */
+    }
+
+    #infantil h1 {
+        font-size: 2.2em;
+    }
+
+    .bloque-tema h2 {
+        font-size: 1.8em;
+    }
+}
+
+
+
+
+
 
 /*Equipo*/
 .team {
