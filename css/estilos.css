@@ -776,12 +776,31 @@ header {
     background-size: cover;
 }
 
+.cta__kids{
+    display: inline-block;
+    background-color: #ee75e8;
+    justify-self: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 13px 30px;
+    border-radius: 32px;
+}
+
+.cta__kids:hover {
+    background-color: #dd33ec;
+    /* Cambiar color de fondo */
+    transform: scale(1.03);
+    /* Agrandar ligeramente el botón */
+}
+
+
 
 #infantil {
     padding: 60px 20px; /* Espaciado interno superior/inferior y lateral */
     background-color: #f9f9f9; /* Un color de fondo suave para la sección */
     font-family: Arial, sans-serif; /* O la fuente que uses en tu web */
     color: #333;
+     background-color: #fffafa;
 }
 
 #infantil .contenedor-principal {
