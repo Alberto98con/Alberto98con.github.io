@@ -1644,6 +1644,11 @@ input[type="radio"] {
         width: 100%;
     }
 
+    /*Calendar*/
+
+    .google__calendar{
+        height: 1100px;
+    }
 
 }
 
