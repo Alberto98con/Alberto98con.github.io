@@ -1,0 +1,46 @@
+# Activa el motor de reescritura de URLs
+RewriteEngine On
+
+# Fuerza el uso de HTTPS y redirige "www" a "no-www"
+RewriteCond %{HTTPS} !=on [OR]
+RewriteCond %{HTTP_HOST} ^www\.selianapsicologia\.com [NC]
+RewriteRule ^(.*)$ https://selianapsicologia.com/$1 [L,R=301]
+
+
+<IfModule mod_headers.c>
+    Header set Link "<https://selianapsicologia.com/>; rel=\"canonical\""
+</IfModule>
+
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType text/html "access plus 1 month"
+    ExpiresByType application/pdf "access plus 1 month"
+    ExpiresByType text/x-javascript "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType application/x-shockwave-flash "access plus 1 month"
+    ExpiresByType image/x-icon "access plus 1 year"
+    ExpiresDefault "access plus 2 days"
+</IfModule>
+
+Options -Indexes
+
+<Files .htaccess>
+Order Allow,Deny
+Deny from all
+</Files>
+
+<FilesMatch "\.(htaccess|htpasswd|ini|log|sh|sql|bak|config)$">
+Order Allow,Deny
+Deny from all
+</FilesMatch>
+
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/x-javascript application/xml application/xhtml+xml application/rss+xml application/atom_xml application/x-httpd-php application/x-httpd-fastphp application/x-httpd-eruby
+</IfModule>
+
+RewriteRule ^robots\.txt$ - [L]

@@ -1,300 +1,389 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Google Tag Manager -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script>
-        (function (w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-56KZNXGG');
-    </script>
-    <!-- End Google Tag Manager -->
-    <title>Seliana Psicología - Equipo</title>
-    <link rel="shortcut icon" href="./images/logotipoP.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/estilos.css">
-
-    <meta name="theme-color" content="#2091F9">
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1X37S8B7BK"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'G-1X37S8B7BK');
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-56KZNXGG");
     </script>
 
-    <!-- Primary Meta Tags -->
-    <meta name="title" content="Seliana Psicología - Primera consulta gratuita en terapia online" />
-    <meta name="description"
-        content="Seliana Psicología. Conoce a nuestro equipo y pide cita con cualquiera de nosotros." />
-    <meta name="keywords"
-        content="psicologo gratis, primera consulta gratuita, terapia online, psicología online, psicólogo en España, psicología barata, terapia gratis, Madrid, Toledo, Barcelona, Sevilla, Badajoz" />
+    <title>Seliana Psicologia - Nuestro Equipo de Psicologos</title>
+    <link
+      rel="shortcut icon"
+      href="./images/logotipoP.jpg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <meta name="theme-color" content="#0C1B2A" />
 
-    <!-- Open Graph / Facebook -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-1X37S8B7BK"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-1X37S8B7BK");
+    </script>
+
+    <meta
+      name="title"
+      content="Seliana Psicologia - Nuestro Equipo de Psicologos"
+    />
+    <meta
+      name="description"
+      content="Conoce al equipo de psicologos de Seliana Psicologia. Profesionales colegiados especializados en diferentes areas de la salud mental."
+    />
+    <meta
+      name="keywords"
+      content="equipo psicologos, psicologo sanitario, Alberto Moraleda, Ma Paz Gonzalez, Seliana Psicologia"
+    />
+    <meta name="robots" content="index, follow" />
+
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Seliana Psicología - Equipo" />
-    <meta property="og:description" content="Seliana Psicologia. Conoce a nuestro equipo." />
-    <meta property="og:image" content="https://selianapsicologia.com/images/terapiaGrupal.jpg" />
-    <meta property="og:url" content="https://selianapsicologia.com/equipo.html" />
+    <meta property="og:title" content="Seliana Psicologia - Nuestro Equipo" />
+    <meta
+      property="og:description"
+      content="Conoce al equipo de psicologos de Seliana Psicologia. Profesionales colegiados especializados."
+    />
+    <meta
+      property="og:image"
+      content="https://selianapsicologia.com/images/logotipoG.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://selianapsicologia.com/equipo.html"
+    />
+    <meta property="og:locale" content="es_ES" />
 
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:title"
+      content="Seliana Psicologia - Nuestro Equipo"
+    />
+    <meta
+      property="twitter:description"
+      content="Conoce al equipo de psicologos de Seliana Psicologia."
+    />
+    <meta
+      property="twitter:image"
+      content="https://selianapsicologia.com/images/logotipoG.jpg"
+    />
 
-    <!-- Twitter -->
-    <meta property="twitter:title" content="Seliana Psicología - Primera consulta gratuita en terapia online" />
-    <meta property="twitter:description"
-        content="Primera consulta gratuita en terapia psicológica online. Seliana Psicología te ofrece el mejor servicio profesional al mejor precio. Pide tu cita ya." />
-
-    <!-- Canonical URL -->
     <link rel="canonical" href="https://selianapsicologia.com/equipo.html" />
-    <!-- Structured Data -->
+
     <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "Seliana Psicología",
-            "url": "https://selianapsicologia.com",
-            "logo": "https://selianapsicologia.com/images/logotipoG.jpg",
-            "contactPoint": {
-                "@type": "ContactPoint",
-                "telephone": "+34-681-025-888",
-                "contactType": "Customer Service",
-                "areaServed": "ES",
-                "availableLanguage": "Spanish"
-            },
-            "sameAs": [
-                "https://www.instagram.com/selianapsicologia",
-                "https://www.facebook.com/selianapsicologia",
-                "https://www.twitter.com/selianapsicologia"
-            ]
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Seliana Psicologia",
+        "url": "https://selianapsicologia.com",
+        "logo": "https://selianapsicologia.com/images/logotipoG.jpg",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+34-681-025-888",
+          "contactType": "Customer Service",
+          "areaServed": "ES",
+          "availableLanguage": "Spanish"
         }
+      }
     </script>
-</head>
+  </head>
 
-<body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-56KZNXGG" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+  <body>
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-56KZNXGG"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
 
-    <header class="header__team">
-      <nav class="nav">
-            <div class="logo">
-                <a href="./index.html">SELIANA PSICOLOGIA</a>
-            </div>
-            <ul class="menu">
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./infanto-juvenil.html">Niños</a></li>
-                <li><a href="./equipo.html">Equipo</a></li>
-                <li><a href="https://maps.app.goo.gl/kr43FHaDE1PQ2jXPA">Ubicación</a></li>
-                <li><a href="./calendar.html">Citas</a></li>
-                <li><a href="./blog.html">Blog</a></li>
-            </ul>
+    <nav class="nav" id="nav">
+      <a href="./index.html" class="nav__logo">Seliana Psicologia</a>
+      <ul class="nav__menu" id="nav-menu">
+        <li><a href="./index.html">Inicio</a></li>
+        <li><a href="./infanto-juvenil.html">Infanto-Juvenil</a></li>
+        <li><a href="./equipo.html">Equipo</a></li>
+        <li>
+          <a
+            href="https://maps.app.goo.gl/kr43FHaDE1PQ2jXPA"
+            target="_blank"
+            rel="noopener"
+            >Ubicacion</a
+          >
+        </li>
+        <li><a href="./calendar.html">Citas</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+      </ul>
+      <button
+        class="nav__toggle"
+        id="nav-toggle"
+        aria-label="Abrir menu de navegacion"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 5.25Zm0 4.5A.75.75 0 0 1 3.75 9h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 9.75Zm0 4.5a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Zm0 4.5a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </button>
+    </nav>
 
-            <div class="menu-btn">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                    <path fill-rule="evenodd"
-                        d="M3 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 5.25Zm0 4.5A.75.75 0 0 1 3.75 9h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 9.75Zm0 4.5a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Zm0 4.5a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
-                        clip-rule="evenodd" />
-                </svg>
-
-            </div>
-        </nav>
+    <!-- Hero -->
+    <header class="hero hero--page hero--team">
+      <div class="hero__inner">
+        <p class="hero__eyebrow">Nuestro Equipo</p>
+        <h1 class="hero__title">Profesionales a tu servicio</h1>
+        <p class="hero__subtitle">
+          Psicologos sanitarios colegiados comprometidos con tu bienestar
+          emocional.
+        </p>
+      </div>
     </header>
 
     <main>
-        <section class="team">
-            <div class="team__container container">
-                <h1 class="team__title">Conoce a Nuestro Equipo</h1>
-                <p class="team__text">Y pide cita directa con quien mejor se adapte a tu situación</p>
+      <section class="section">
+        <div class="container">
+          <div class="team__grid">
+            <!-- Alberto -->
+            <article class="team-card">
+              <img
+                src="./images/Foto Alberto (1).jpg"
+                alt="Alberto Moraleda Olivares"
+                class="team-card__photo"
+              />
+              <div class="team-card__info">
+                <h2 class="team-card__name">Alberto Moraleda</h2>
+                <p class="team-card__role">Psicologo General Sanitario</p>
+                <p class="team-card__detail">Colegiado M-43042</p>
+                <p class="team-card__detail">
+                  <a href="mailto:alberto@selianapsicologia.com"
+                    >alberto@selianapsicologia.com</a
+                  >
+                </p>
+                <p class="team-card__detail">
+                  <a href="tel:+34681025888">681 025 888</a>
+                </p>
+                <button class="team-card__expand team-card__expand--open">
+                  Conocer mas
+                </button>
+                <button class="team-card__expand team-card__expand--close">
+                  Cerrar
+                </button>
+              </div>
+              <div class="team-card__description">
+                <p>
+                  Graduado en Psicologia y con el Master habilitante en
+                  Psicologia General Sanitaria, me apasiona el mundo de la salud
+                  mental y estoy comprometido con el bienestar emocional de mis
+                  pacientes.
+                </p>
+                <i
+                  >"Creo firmemente que la terapia no es solo un espacio para
+                  resolver problemas, sino una oportunidad para crecer,
+                  conocerse mejor y construir una vida mas plena."</i
+                >
+                <p>
+                  Mi enfoque terapeutico se basa en la flexibilidad y la
+                  adaptacion a las necesidades de cada persona, utilizando
+                  tecnicas de diferentes corrientes psicologicas avaladas por la
+                  evidencia cientifica.
+                </p>
+                <b>Especializacion:</b>
+                <p>
+                  Psicologia sanitaria, neuropsicologia, adicciones, trastornos de
+                  la conducta alimentaria, terapia de pareja y psicologia
+                  laboral.
+                </p>
+              </div>
+            </article>
 
-                <div class="card">
-                    <img src="./images/Foto Alberto (1).jpg" alt="Foto de Integrante 2">
-                    <div class="card-content card-content-reverse">
-                        <h2>Alberto Moraleda Olivares</h2>
-                        <p>Psicólogo Sanitario</p>
-                        <p>Nº Colegiado: M-43042</p>
-                        <p>Experto en Neuropsicología</p>
-                        <p>Teléfono: <a href="tel:+34681025888">681 025 888</a></p>
-                        <p>Email: <a href="mailto:amoraledaol@gmail.com">alberto@selianapsicologia.com</a></p>
-                        <a href="#" class="expand-btn">Más información</a> <!-- Enlace para expandir -->
-                        <a href="#" class="close-btn">Ocultar</a> <!-- Botón para colapsar -->
+            <!-- Mari Paz -->
+            <article class="team-card">
+              <img
+                src="./images/Mari Paz.jpeg"
+                alt="Ma Paz Gonzalez Alonso"
+                class="team-card__photo"
+              />
+              <div class="team-card__info">
+                <h2 class="team-card__name">Mª Paz González Calero</h2>
+                <p class="team-card__role">Psicóloga Sanitaria</p>
+                <p class="team-card__detail">Nº Colegiada: EX02470</p>
+                <p class="team-card__detail">
+                  <a href="mailto:psi.maripazgc@gmail.com"
+                    >psi.maripazgc@gmail.com</a
+                  >
+                </p>
+                <button class="team-card__expand team-card__expand--open">
+                  Conocer mas
+                </button>
+                <button class="team-card__expand team-card__expand--close">
+                  Cerrar
+                </button>
+              </div>
+              <div class="team-card__description">
+                <p>
+                  Graduada en Psicologia y con el Master habilitante en
+                  Psicologia General Sanitaria, me dedico a acompanar a las
+                  personas en su proceso de autoconocimiento y bienestar
+                  emocional.
+                </p>
+                <i
+                  >"Para mí, la terapia psicológica es un trabajo en equipo en
+                  el que recorreremos juntos un camino para trabajar aspectos de
+                  tu vida que te impiden sentirte pleno o satisfecho."</i
+                >
+                <i
+                  >"Me apasiona la psicología y mi trabajo, para el que
+                  considero de vital importancia una formación continuada.
+                  Gracias a esto consigo adaptarme a cada persona y sus
+                  necesidades. Percibo la terapia como un proceso de
+                  aprendizaje, donde a través del desarrollo de distintas
+                  habilidades logramos sentirnos más realizados con nuestro día
+                  a día y enfrentamos desde una nueva perspectiva aquellos
+                  aspectos que nos causan malestar."
+                </i>
+                <p>
+                  Mi enfoque terapeutico se adapta a las necesidades unicas de
+                  cada individuo, combinando tecnicas de diferentes corrientes
+                  psicologicas para ofrecer una atencion integral y
+                  personalizada.
+                </p>
+                <b>Especializacion:</b>
+                <p>
+                  Psicologia e intervencion infanto-juvenil,
+                  terapia familiar y de pareja, duelo y trauma.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
 
-
-                    </div>
-                    <div class="card-description">
-                        <p>Graduado en la Universidad Pontificia de Salamanca, para continuar
-                            posteriormente realizar el máster en psicología general sanitaria por la UNIR.
-                        </p>
-                        <p>Realizó su formación como terapeuta cognitivo conductual, especializándose en
-                            neuropsicología, psicología perinatal y con experiencia en el trabajo infanto-juvenil.
-                        </p>
-                        <i>"Mi objetivo es ayudar a toda aquella persona que lo necesite, para ello me encuentro en un
-                            proceso de formación continua, con el fin de que mis pacientes encuentren el mejor trato y
-                            condiciones posibles para su recuperación."</i>
-                            <p></p>
-                        <b>Formación complementaria:</b>
-                        <p>- Experto en Neuropsicología para adultos.</p>
-                        <p>- Psicología perinatal</p>
-                        <p>- Tratamiento de Autismo y TDAH.</p>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <img src="./images/Mari Paz.jpeg" alt="Foto de Integrante 1">
-                    <div class="card-content">
-                        <h2>Mª Paz González Calero</h2>
-                        <p>Psicóloga Sanitaria</p>
-                        <p>Nº Colegiada: EX02470</p>
-                        <p>Especialista Infanto-Juvenil</p>
-                        <p>Email: <a href="mailto:psi.maripazgc@gmail.com">psi.maripazgc@gmail.com</a></p>
-                        <a href="#" class="expand-btn">Más información</a> <!-- Enlace para expandir -->
-                        <a href="#" class="close-btn">Ocultar</a> <!-- Botón para colapsar -->
-
-                    </div>
-                    <div class="card-description">
-                        <p>Mari Paz se licenció en la Universidad Pontificia de Salamanca y, después, continuó sus
-                            estudios especializándose en el área sanitaria realizando un máster en la Universidad
-                            Internacional de Valencia.
-                        </p>
-                        <p>Realizó su formación como terapeuta cognitivo-conductual, especializándose en el área
-                            infanto-juvenil.</p>
-                        <i>"Me apasiona la psicología y mi trabajo, para el que considero de vital importancia una
-                            formación continuada. Gracias a esto consigo adaptarme a cada persona y sus necesidades.
-                            Percibo la terapia como un proceso de aprendizaje, donde a través del desarrollo de
-                            distintas habilidades logramos sentirnos más realizados con nuestro día a día y enfrentamos
-                            desde una nueva perspectiva aquellos aspectos que nos causan malestar."</i>
-                        <p></p>
-                        <i>"Para mí, la terapia psicológica es un trabajo en equipo en el que recorreremos juntos un
-                            camino para trabajar aspectos de tu vida que te impiden sentirte pleno o satisfecho."</i>
-                        <p> </p>
-                        <b>Formación complementaria:</b>
-                        <p>- Curso sobre el Trastorno de Estrés Postraumático (TEP)</p>
-                        <p> - Experta en adicciones.</p>
-                        <p> - Curso en Trastornos emocionales.</p>
-                        <p></p>
-                        <a href="https://www.instagram.com/psicologia.mpaz/" target="_blank">Visita mi Instagram</a>
-
-                    </div>
-                </div>
-
-                
-
-                <!--<div class="card">
-                            <img src="./images/personaIcono.jpg" alt="Foto de Integrante 3">
-                            <div class="card-content">
-                                <h2>Miriam Sánchez González</h2>
-                                <p>Psicóloga Sanitaria</p>
-                                <p>Experta en Neuropsicología</p>
-                                <p>Teléfono: <a href="tel:+34679705637">679 705 637</a></p>
-                        <p>Email: <a href="mailto:miriamsg941@gmail.com">miriamsg941@gmail.com</a></p>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="./images/personaIcono.jpg" alt="Foto de Integrante 4">
-                            <div class="card-content card-content-reverse">
-                                <h2>Pablo Acebes Sánchez</h2>
-                                <p>Psicólogo Sanitario</p>
-                                <p>Especialista Infanto-Juvenil</p>
-                        <p>Teléfono: <a href="tel:+34608759631">608 759 631</a></p>
-                        <p>Email: <a href="mailto:pabloacebessanchez@gmail.com">pabloacebessanchez@gmail.com</a></p>
-
-                            </div>
-                        </div>
-
-                        <div class="card">
-                            <img src="./images/personaIcono.jpg" alt="Foto de Integrante 5">
-                            <div class="card-content">
-                                <h2>Inmaculada Nieto Olivares</h2>
-                                <p>Especialidad: Psicología Sanitaria</p>
-                                <p>Teléfono: <a href="tel:+34695820676">695 82 06 76</a></p>
-                                <p>Email: <a href="mailto:inietoolivares@gmail.com">inietoolivares@gmail.com</a></p>
-                               
-                            </div>
-                        </div>-->
-
-
-                <!-- Añade más tarjetas de integrantes aquí -->
-            </div>
-        </section>
+      <!-- CTA -->
+      <section class="cta-section">
+        <div class="container">
+          <h2 class="cta-section__title reveal">Reserva tu primera sesion</h2>
+          <p class="cta-section__text reveal">
+            Elige al profesional que prefieras y comienza tu proceso de cambio.
+          </p>
+          <div class="reveal">
+            <a href="./calendar.html" class="btn btn--primary btn--lg"
+              >Pedir cita ahora</a
+            >
+          </div>
+        </div>
+      </section>
     </main>
 
-      <footer class="footer">
-        <section class="footer__container container">
-            <nav class="nav nav--footer">
-                <h2 class="footer__title">Seliana Psicología</h2>
-                <ul class="nav__link nav__link--footer">
-                    <li class="nav__items">
-                        <a href="./index.html" class="nav__links">Inicio</a>
-                    </li>
-                    <li class="nav__items">
-                        <a href="./infanto-juvenil.html" class="nav__links">Niños</a>
-                    </li>
-                    <li class="nav__items">
-                        <a href="./equipo.html" class="nav__links">Equipo</a>
-                    </li>
-                    <li class="nav__items">
-                        <a href="https://maps.app.goo.gl/Vbe27phrb9b7k3PU8" class="nav__links">Ubicación</a>
-                    </li>
-                    <li class="nav__items">
-                        <a href="./calendar.html" class="nav__links">Citas</a>
-                    </li>
-                    <li class="nav__items">
-                        <a href="./blog.html" class="nav__links">Blog</a>
-                    </li>
-                </ul>
-            </nav>
-        </section>
-
-        <section class="footer__copy container">
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__main">
+          <div class="footer__brand">
+            <span class="footer__brand-name">Seliana Psicologia</span>
+            <p class="footer__brand-text">
+              Promoviendo tu bienestar emocional con profesionales cualificados
+              en toda Espana.
+            </p>
             <div class="footer__social">
-                <a href="https://www.facebook.com/profile.php?id=61567056280449" class="footer__icons"><img
-                        src="./images/facebook.svg" alt="Facebook" class="footer__img"></a>
-                <a href="https://www.instagram.com/selianapsicologia/" class="footer__icons"><img
-                        src="./images/instagram.svg" alt="Instagram" class="footer__img"></a>
-                <a href="tel:+34681025888" class="footer__icons"><img src="./images/whatsapp.svg" alt="WhatsApp"
-                        class="footer__img"></a>
-                <a href="https://x.com/SelianaPsico" class="footer__icons"><img src="./images/twitter.svg" alt="Twitter"
-                        class="footer__img"></a>
+              <a
+                href="https://www.facebook.com/profile.php?id=61567056280449"
+                aria-label="Facebook"
+                ><img src="./images/facebook.svg" alt="Facebook"
+              /></a>
+              <a
+                href="https://www.instagram.com/selianapsicologia/"
+                aria-label="Instagram"
+                ><img src="./images/instagram.svg" alt="Instagram"
+              /></a>
+              <a href="tel:+34681025888" aria-label="WhatsApp"
+                ><img src="./images/whatsapp.svg" alt="WhatsApp"
+              /></a>
+              <a href="https://x.com/SelianaPsico" aria-label="Twitter"
+                ><img src="./images/twitter.svg" alt="Twitter"
+              /></a>
             </div>
-
-            <h3 class="footer__copyright">Todos los derechos reservados &copy; Seliana Psicología</h3>
-        </section>
+          </div>
+          <div>
+            <h4 class="footer__heading">Navegacion</h4>
+            <ul class="footer__links">
+              <li><a href="./index.html">Inicio</a></li>
+              <li><a href="./infanto-juvenil.html">Infanto-Juvenil</a></li>
+              <li><a href="./equipo.html">Equipo</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="footer__heading">Servicios</h4>
+            <ul class="footer__links">
+              <li><a href="./calendar.html">Pedir cita</a></li>
+              <li><a href="./blog.html">Blog</a></li>
+              <li>
+                <a
+                  href="https://maps.app.goo.gl/Vbe27phrb9b7k3PU8"
+                  target="_blank"
+                  rel="noopener"
+                  >Ubicacion</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="footer__heading">Contacto</h4>
+            <ul class="footer__links">
+              <li><a href="tel:+34681025888">681 025 888</a></li>
+              <li><a href="mailto:alberto@selianapsicologia.com">Email</a></li>
+              <li><a href="./aviso-cookies.html">Aviso de cookies</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <p class="footer__copyright">
+            Todos los derechos reservados &copy; Seliana Psicologia
+          </p>
+        </div>
+      </div>
     </footer>
 
-
-    <!--Cookies-->
-    <div class="aviso-cookies" id="aviso-cookies">
-        <img src="./images/cookie.svg" alt="galleta" class="galleta">
-        <h3 class="titulo">Cookies</h3>
-        <p class="parrafo">Utilizamos cookies propias y de terceros para mejorar nuestros servicios.</p>
-        <button class="boton" id="btn-aceptar-cookies">De acuerdo</button>
-        <a class="enlace" href="./aviso-cookies.html">Aviso de cookies</a>
+    <div class="cookie-banner" id="cookie-banner">
+      <img src="./images/cookie.svg" alt="Cookie" class="cookie-banner__icon" />
+      <h3 class="cookie-banner__title">Cookies</h3>
+      <p class="cookie-banner__text">
+        Utilizamos cookies propias y de terceros para mejorar nuestros
+        servicios.
+      </p>
+      <div class="cookie-banner__actions">
+        <button class="cookie-banner__accept" id="btn-accept-cookies">
+          De acuerdo
+        </button>
+        <a class="cookie-banner__link" href="./aviso-cookies.html"
+          >Aviso de cookies</a
+        >
+      </div>
     </div>
 
-    <!--Scripts-->
-    <script src="./js/menu.js"></script>
-    <script src="./js/doc__loader.js"></script>
-    <script src="./js/card__expander.js"></script>
-    <script src="./js/aviso-cookies.js"></script>
-
-</body>
-
+    <script src="./js/main.js" defer></script>
+    <script src="./js/cookies.js"></script>
+  </body>
 </html>

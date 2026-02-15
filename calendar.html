@@ -1,282 +1,191 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Google Tag Manager -->
     <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({
-          "gtm.start": new Date().getTime(),
-          event: "gtm.js",
-        });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-56KZNXGG");
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-56KZNXGG');
     </script>
     <!-- End Google Tag Manager -->
 
-    <title>Seliana Psicología - Citas</title>
-    <link
-      rel="shortcut icon"
-      href="./images/logotipoP.jpg"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./css/estilos.css" />
+    <title>Seliana Psicologia - Citas</title>
+    <link rel="shortcut icon" href="./images/logotipoP.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
 
-    <meta name="theme-color" content="#2091F9" />
+    <meta name="theme-color" content="#0C1B2A">
 
     <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-1X37S8B7BK"
-    ></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1X37S8B7BK"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-1X37S8B7BK");
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-1X37S8B7BK');
     </script>
 
     <!-- Primary Meta Tags -->
-    <meta
-      name="title"
-      content="Seliana Psicología - Primera consulta gratuita en terapia online"
-    />
-    <meta
-      name="description"
-      content="Seliana Psicología te ofrece tu primera consulta completamente gratuita. Terapia psicológica online de calidad con profesionales en toda España. "
-    />
-    <meta
-      name="keywords"
-      content="psicologo gratis, primera consulta gratuita, terapia online, psicología online, psicólogo en España, psicología barata, terapia gratis, Madrid, Toledo, Barcelona, Sevilla, Badajoz"
-    />
+    <meta name="title" content="Seliana Psicologia - Citas">
+    <meta name="description" content="Reserva tu cita con Seliana Psicologia de forma rapida y sencilla. Elige el dia y la hora que mejor se adapten a ti y comienza tu proceso terapeutico.">
+    <meta name="keywords" content="cita psicologo, reservar sesion, terapia online, psicologo cita previa, Seliana Psicologia, agenda psicologo">
+    <meta name="robots" content="index, follow">
 
     <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Seliana Psicología - Citas" />
-    <meta
-      property="og:description"
-      content="Agenda tu cita con nosotros de manera fácil y rápida."
-    />
-    <meta
-      property="og:image"
-      content="https://selianapsicologia.com/images/terapia.jpg"
-    />
-    <meta
-      property="og:url"
-      content="https://selianapsicologia.com/calendar.html"
-    />
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Seliana Psicologia - Citas">
+    <meta property="og:description" content="Reserva tu cita con Seliana Psicologia de forma rapida y sencilla. Elige el dia y la hora que mejor se adapten a ti.">
+    <meta property="og:image" content="https://selianapsicologia.com/images/logotipoG.jpg">
+    <meta property="og:url" content="https://selianapsicologia.com/calendar.html">
+    <meta property="og:locale" content="es_ES">
 
     <!-- Twitter -->
-    <meta
-      property="twitter:title"
-      content="Seliana Psicología - Primera consulta gratuita en terapia online"
-    />
-    <meta
-      property="twitter:description"
-      content="Primera consulta gratuita en terapia psicológica online. Seliana Psicología te ofrece el mejor servicio profesional al mejor precio. Pide tu cita ya."
-    />
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Seliana Psicologia - Reserva tu cita">
+    <meta property="twitter:description" content="Reserva tu cita con Seliana Psicologia. Elige el profesional, dia y hora que prefieras y comienza tu camino hacia el bienestar.">
+    <meta property="twitter:image" content="https://selianapsicologia.com/images/logotipoG.jpg">
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://selianapsicologia.com/calendar.html" />
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Seliana Psicología",
-        "url": "https://selianapsicologia.com",
-        "logo": "https://selianapsicologia.com/images/logotipoG.jpg",
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "telephone": "+34-681-025-888",
-          "contactType": "Customer Service",
-          "areaServed": "ES",
-          "availableLanguage": "Spanish"
-        },
-        "sameAs": [
-          "https://www.instagram.com/selianapsicologia",
-          "https://www.facebook.com/selianapsicologia",
-          "https://www.twitter.com/selianapsicologia"
-        ]
-      }
-    </script>
-  </head>
+    <link rel="canonical" href="https://selianapsicologia.com/calendar.html">
 
-  <body>
+    <!-- Structured Data - Organization -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Seliana Psicologia",
+            "url": "https://selianapsicologia.com",
+            "logo": "https://selianapsicologia.com/images/logotipoG.jpg",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+34-681-025-888",
+                "contactType": "Customer Service",
+                "areaServed": "ES",
+                "availableLanguage": "Spanish"
+            },
+            "sameAs": [
+                "https://www.instagram.com/selianapsicologia",
+                "https://www.facebook.com/selianapsicologia",
+                "https://www.twitter.com/selianapsicologia"
+            ]
+        }
+    </script>
+</head>
+
+<body>
     <!-- Google Tag Manager (noscript) -->
-    <noscript
-      ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-56KZNXGG"
-        height="0"
-        width="0"
-        style="display: none; visibility: hidden"
-      ></iframe
-    ></noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-56KZNXGG" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <header class="header__calendar">
-      <nav class="nav">
-        <div class="logo">
-          <a href="./index.html">SELIANA PSICOLOGIA</a>
-        </div>
-        <ul class="menu">
-          <li><a href="./index.html">Inicio</a></li>
-          <li><a href="./infanto-juvenil.html">Niños</a></li>
-          <li><a href="./equipo.html">Equipo</a></li>
-          <li>
-            <a href="https://maps.app.goo.gl/kr43FHaDE1PQ2jXPA">Ubicación</a>
-          </li>
-          <li><a href="./calendar.html">Citas</a></li>
-          <li><a href="./blog.html">Blog</a></li>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <a href="./index.html" class="nav__logo">Seliana Psicologia</a>
+        <ul class="nav__menu" id="nav-menu">
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./infanto-juvenil.html">Infanto-Juvenil</a></li>
+            <li><a href="./equipo.html">Equipo</a></li>
+            <li><a href="https://maps.app.goo.gl/kr43FHaDE1PQ2jXPA" target="_blank" rel="noopener">Ubicacion</a></li>
+            <li><a href="./calendar.html">Citas</a></li>
+            <li><a href="./blog.html">Blog</a></li>
         </ul>
+        <button class="nav__toggle" id="nav-toggle" aria-label="Abrir menu de navegacion">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path fill-rule="evenodd" d="M3 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 5.25Zm0 4.5A.75.75 0 0 1 3.75 9h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 9.75Zm0 4.5a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Zm0 4.5a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+            </svg>
+        </button>
+    </nav>
 
-        <div class="menu-btn">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            class="size-6"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M3 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 5.25Zm0 4.5A.75.75 0 0 1 3.75 9h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 9.75Zm0 4.5a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Zm0 4.5a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
-              clip-rule="evenodd"
-            />
-          </svg>
+    <!-- Hero -->
+    <header class="hero hero--page hero--calendar">
+        <div class="hero__inner">
+            <p class="hero__eyebrow">Citas</p>
+            <h1 class="hero__title">Pide tu sesion ahora</h1>
+            <p class="hero__subtitle">Elige el dia y la hora que mejor se adapten a ti y comienza tu proceso terapeutico.</p>
         </div>
-      </nav>
-      <div class="header__calendar__text">
-        <h3 class="calendar__subtitle">Pide tu sesión ahora.</h3>
-      </div>
     </header>
 
     <main>
-      <!-- <section class="calendar">
-        <div class="calendar__container container">
-          <iframe
-            src="https://citas.selianapsicologia.com/index.php/?provider=any-provider&service=3"
-            style="border: 0"
-            width="100%"
-            height="100%"
-            frameborder="0"
-          ></iframe>
+        <!-- Calendar Section -->
+        <div class="calendar-section">
+            <!-- Alberto Google Calendar Appointment Scheduling -->
+            <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2-1dii-9QqLncgbu_tNZR-g_oLFoKXdMCdxtw_ZRpGZ9JudS1RwsFiMbf8bpS6bAthyyqhCUSu?gv=true" style="border: 0" width="100%" height="700" frameborder="0"></iframe>
+
+            <!-- Mari Paz Google Calendar Appointment Scheduling -->
+            <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1Ceo6vrsfErYTrjIgCLQPnJ5wlMZI-mphxZC1MjSqa0Hoox4Nh3s9ehJPtVdlFQf3GrB37PTBj?gv=true" style="border: 0" width="100%" height="600" frameborder="0"></iframe>
         </div>
-      </section>-->
-
-      <!-- Alberto Google Calendar Appointment Scheduling begin -->
-      <iframe
-        class="google__calendar"
-        src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2-1dii-9QqLncgbu_tNZR-g_oLFoKXdMCdxtw_ZRpGZ9JudS1RwsFiMbf8bpS6bAthyyqhCUSu?gv=true"
-        style="border: 0"
-        width="100%"
-        height="700"
-        frameborder="0"
-      ></iframe>
-      <!-- end Google Calendar Appointment Scheduling -->
-
-      <!-- Mari Paz Google Calendar Appointment Scheduling begin -->
-      <iframe
-        src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1Ceo6vrsfErYTrjIgCLQPnJ5wlMZI-mphxZC1MjSqa0Hoox4Nh3s9ehJPtVdlFQf3GrB37PTBj?gv=true"
-        style="border: 0"
-        width="100%"
-        height="600"
-        frameborder="0"
-      ></iframe>
-      <!-- end Google Calendar Appointment Scheduling -->
     </main>
 
+    <!-- Footer -->
     <footer class="footer">
-      <section class="footer__container container">
-        <nav class="nav nav--footer">
-          <h2 class="footer__title">Seliana Psicología</h2>
-          <ul class="nav__link nav__link--footer">
-            <li class="nav__items">
-              <a href="./index.html" class="nav__links">Inicio</a>
-            </li>
-            <li class="nav__items">
-              <a href="./infanto-juvenil.html" class="nav__links">Niños</a>
-            </li>
-            <li class="nav__items">
-              <a href="./equipo.html" class="nav__links">Equipo</a>
-            </li>
-            <li class="nav__items">
-              <a
-                href="https://maps.app.goo.gl/Vbe27phrb9b7k3PU8"
-                class="nav__links"
-                >Ubicación</a
-              >
-            </li>
-            <li class="nav__items">
-              <a href="./calendar.html" class="nav__links">Citas</a>
-            </li>
-            <li class="nav__items">
-              <a href="./blog.html" class="nav__links">Blog</a>
-            </li>
-          </ul>
-        </nav>
-      </section>
-
-      <section class="footer__copy container">
-        <div class="footer__social">
-          <a
-            href="https://www.facebook.com/profile.php?id=61567056280449"
-            class="footer__icons"
-            ><img
-              src="./images/facebook.svg"
-              alt="Facebook"
-              class="footer__img"
-          /></a>
-          <a
-            href="https://www.instagram.com/selianapsicologia/"
-            class="footer__icons"
-            ><img
-              src="./images/instagram.svg"
-              alt="Instagram"
-              class="footer__img"
-          /></a>
-          <a href="tel:+34681025888" class="footer__icons"
-            ><img
-              src="./images/whatsapp.svg"
-              alt="WhatsApp"
-              class="footer__img"
-          /></a>
-          <a href="https://x.com/SelianaPsico" class="footer__icons"
-            ><img src="./images/twitter.svg" alt="Twitter" class="footer__img"
-          /></a>
+        <div class="container">
+            <div class="footer__main">
+                <div class="footer__brand">
+                    <span class="footer__brand-name">Seliana Psicologia</span>
+                    <p class="footer__brand-text">Promoviendo tu bienestar emocional con profesionales cualificados en toda Espana.</p>
+                    <div class="footer__social">
+                        <a href="https://www.facebook.com/profile.php?id=61567056280449" aria-label="Facebook"><img src="./images/facebook.svg" alt="Facebook"></a>
+                        <a href="https://www.instagram.com/selianapsicologia/" aria-label="Instagram"><img src="./images/instagram.svg" alt="Instagram"></a>
+                        <a href="tel:+34681025888" aria-label="WhatsApp"><img src="./images/whatsapp.svg" alt="WhatsApp"></a>
+                        <a href="https://x.com/SelianaPsico" aria-label="Twitter"><img src="./images/twitter.svg" alt="Twitter"></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer__heading">Navegacion</h4>
+                    <ul class="footer__links">
+                        <li><a href="./index.html">Inicio</a></li>
+                        <li><a href="./infanto-juvenil.html">Infanto-Juvenil</a></li>
+                        <li><a href="./equipo.html">Equipo</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer__heading">Servicios</h4>
+                    <ul class="footer__links">
+                        <li><a href="./calendar.html">Pedir cita</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
+                        <li><a href="https://maps.app.goo.gl/Vbe27phrb9b7k3PU8" target="_blank" rel="noopener">Ubicacion</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer__heading">Contacto</h4>
+                    <ul class="footer__links">
+                        <li><a href="tel:+34681025888">681 025 888</a></li>
+                        <li><a href="mailto:alberto@selianapsicologia.com">Email</a></li>
+                        <li><a href="./aviso-cookies.html">Aviso de cookies</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-
-        <h3 class="footer__copyright">
-          Todos los derechos reservados &copy; Seliana Psicología
-        </h3>
-      </section>
+        <div class="footer__bottom">
+            <div class="container">
+                <p class="footer__copyright">Todos los derechos reservados &copy; Seliana Psicologia</p>
+            </div>
+        </div>
     </footer>
 
-    <!--Cookies-->
-    <div class="aviso-cookies" id="aviso-cookies">
-      <img src="./images/cookie.svg" alt="galleta" class="galleta" />
-      <h3 class="titulo">Cookies</h3>
-      <p class="parrafo">
-        Utilizamos cookies propias y de terceros para mejorar nuestros
-        servicios.
-      </p>
-      <button class="boton" id="btn-aceptar-cookies">De acuerdo</button>
-      <a class="enlace" href="./aviso-cookies.html">Aviso de cookies</a>
+    <!-- Cookie Banner -->
+    <div class="cookie-banner" id="cookie-banner">
+        <img src="./images/cookie.svg" alt="Cookie" class="cookie-banner__icon">
+        <h3 class="cookie-banner__title">Cookies</h3>
+        <p class="cookie-banner__text">Utilizamos cookies propias y de terceros para mejorar nuestros servicios.</p>
+        <div class="cookie-banner__actions">
+            <button class="cookie-banner__accept" id="btn-accept-cookies">De acuerdo</button>
+            <a class="cookie-banner__link" href="./aviso-cookies.html">Aviso de cookies</a>
+        </div>
     </div>
 
-    <!--Scripts-->
-    <script src="./js/menu.js"></script>
-    <script src="./js/aviso-cookies.js"></script>
-  </body>
+    <!-- Scripts -->
+    <script src="./js/main.js" defer></script>
+    <script src="./js/cookies.js"></script>
+</body>
+
 </html>
