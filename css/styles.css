@@ -437,6 +437,16 @@ ul {
 }
 
 /* Page Heroes (shorter) */
+
+/* Widget en hero */
+.hero__trust {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  z-index: 5;
+  padding-top: 120px; 
+}
+
 .hero--page {
   min-height: 420px;
   background-attachment: scroll;
@@ -2212,9 +2222,24 @@ ul {
     color:rgb(255, 255, 255);
   }
 
+  .hero__trust {
+    position: static;      /* Lo devuelve al flujo normal */
+    order: 2;              /* Lo coloca después del contenido */
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+  }
+
   .hero {
     min-height: 85vh;
     background-attachment: scroll;
+    display: flex;
+    flex-direction: column;
+    padding-top: 120px; /* Ajusta a tu gusto */
+  }
+
+  .hero__inner {
+    order: 1;
   }
 
   .hero--page {
