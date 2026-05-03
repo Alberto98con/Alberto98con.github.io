@@ -219,6 +219,22 @@ ul {
   color: rgba(255, 255, 255, 0.6);
 }
 
+/* Whatsapp*/
+
+.float-wa {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  z-index: 100;
+}
+
 /* ═══════════════════════════════════════════
    NAVIGATION
    ═══════════════════════════════════════════ */
@@ -325,7 +341,7 @@ ul {
   background:
     linear-gradient(
       165deg,
-      rgba(12, 27, 42, 0.7) 0%,
+      rgba(12, 27, 42, 0.747) 0%,
       rgba(26, 58, 92, 0.4) 50%,
       rgba(200, 168, 110, 0.7) 100%
     ),
@@ -371,7 +387,7 @@ ul {
   align-items: center;
   gap: 10px;
   font-family: var(--font-body);
-  font-size: 0.78rem;
+  font-size: 1.25rem;
   font-weight: 500;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -444,7 +460,7 @@ ul {
   top: 30px;
   right: 40px;
   z-index: 5;
-  padding-top: 120px; 
+  padding-top: 120px;
 }
 
 .hero--page {
@@ -2219,12 +2235,12 @@ ul {
   }
 
   .nav--scrolled .nav__menu li a {
-    color:rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
   }
 
   .hero__trust {
-    position: static;      /* Lo devuelve al flujo normal */
-    order: 2;              /* Lo coloca después del contenido */
+    position: static; /* Lo devuelve al flujo normal */
+    order: 2; /* Lo coloca después del contenido */
     margin-top: 24px;
     display: flex;
     justify-content: center;
