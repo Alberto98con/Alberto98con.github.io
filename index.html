@@ -3,6 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- PD Cookie Consent: debe ir ANTES de cualquier otro <script> o <link> del <head> -->
+    <link rel="stylesheet" href="https://pdcc.gdpr.es/pdcc.min.css" />
+    <script charset="utf-8" src="https://pdcc.gdpr.es/pdcc.min.js"></script>
+    <script type="text/javascript">
+      PDCookieConsent.config({
+        brand: {
+          dev: true,
+          name: "ONCIBER",
+          url: "https://onciber.com",
+          websiteOwner: "",
+        },
+        showRejectButton: true,
+        cookiePolicyLink: "https://selianapsicologia.com/aviso-cookies.html",
+        hideModalIn: ["https://selianapsicologia.com/aviso-cookies.html"],
+        styles: {
+          primaryButton: { bgColor: "#EEEEEE", txtColor: "#333333" },
+          secondaryButton: { bgColor: "#62C6C6", txtColor: "#333333" },
+          rejectButton: { bgColor: "#EEEEEE", txtColor: "#333333" },
+        },
+      });
+    </script>
+    <!-- End PD Cookie Consent -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <!-- Google Tag Manager -->
     <script>
@@ -832,7 +854,8 @@
             <ul class="footer__links">
               <li><a href="tel:+34681025888">681 025 888</a></li>
               <li><a href="mailto:alberto@selianapsicologia.com">Email</a></li>
-              <li><a href="./aviso-cookies.html">Aviso de cookies</a></li>
+              <li><a href="./aviso-legal.html">Aviso legal</a></li><li><a href="./aviso-cookies.html">Política de cookies</a></li>
+              <li><a href="#" class="pdcc-open-modal">Panel de cookies</a></li>
             </ul>
           </div>
         </div>
@@ -845,31 +868,11 @@
         </div>
       </div>
     </footer>
-
-    <!-- Cookie Banner -->
-    <div class="cookie-banner" id="cookie-banner">
-      <img src="./images/cookie.svg" alt="Cookie" class="cookie-banner__icon" />
-      <h3 class="cookie-banner__title">Cookies</h3>
-      <p class="cookie-banner__text">
-        Utilizamos cookies propias y de terceros para mejorar nuestros
-        servicios.
-      </p>
-      <div class="cookie-banner__actions">
-        <button class="cookie-banner__accept" id="btn-accept-cookies">
-          De acuerdo
-        </button>
-        <a class="cookie-banner__link" href="./aviso-cookies.html"
-          >Aviso de cookies</a
-        >
-      </div>
-    </div>
-
 <!-- Whatsapp -->
       <a href="https://wa.me/34681025888?text=Hola, me gustaria recibir información" class="float-wa" target="_blank">
     <i class="fa fa-whatsapp" style="margin-top:16px;"></i> </a>
 
     <!-- Scripts -->
     <script src="./js/main.js" defer></script>
-    <script src="./js/cookies.js"></script>
   </body>
 </html>
